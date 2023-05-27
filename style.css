@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Devanagari', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: #033E3E;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    margin-left: 50PX;
+    padding: 10px 10px;
+    font-size: 22px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 30px;
+    margin-right: 70px;
+}
+
+ul li {
+    font-size: 20px;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+ul li a:hover {
+    border-bottom: 4px solid white;
+}
+
+.mobile-navbar-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.mobile-navbar-button {
+    display: none;
+}
+
+.mobile-navbar-icon[name="close-outline"] {
+    display: none;
+}
+
+
+#home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+
+    color: white;
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+.home-content {
+    place-self: center;
+
+
+
+}
+
+#home-content-text p {
+    font-size: 30px;
+    color: rgb(2, 2, 57);
+    font-weight: 500;
+}
+
+#home-content-text .home-text {
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    color: #033E3E;
+    text-transform: uppercase;
+
+}
+
+#home-content-text .home-title {
+
+    color:#033E3E;
+    font-size: 20px;
+}
+
+button {
+    background-color: #033E3E;
+    color: white;
+    padding: 5px 20px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    border-radius: 10%;
+    margin: 10px;
+
+
+}
+
+button:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+
+/* border-bottom-right-radius: 35%;
+    border-bottom-left-radius:35%;
+    border-top-left-radius: 50%;
+    border-top-right-radius:50% ;
+*/
+
+#home-content-image img {
+    width: 400px;
+    height: 300px;
+    border-bottom-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-top-left-radius: 80%;
+    border-top-right-radius: 85%;
+
+}
+
+#home-content-image img:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+
+#about {
+
+    display: grid;
+    place-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #033E3E;
+    text-transform: uppercase;
+    display: grid;
+    place-self: center;
+    border-bottom: 8px solid #033E3E;
+    margin: 10px;
+}
+
+.about-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+    place-content: center;
+    gap: 20px;
+    padding: 15px 5%;
+}
+
+.about-section {
+    place-self: center;
+
+}
+
+.about-section p {
+    font-size: 20px;
+}
+
+.about-section h4 {
+    font-size: 30px;
+    color: #033E3E;
+    margin-top: 35px;
+
+}
+
+/* CSS code */
+.skill-bar {
+    background-color: #f0f0f0;
+    height: 10px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.skill-progress {
+    background-color: #033E3E;
+    height: 100%;
+    border-radius: 5px;
+    color: #fff;
+    text-align: right;
+    padding: 0 5px;
+    font-size: 12px;
+
+}
+
+#project {
+    display: grid;
+    place-content: center;
+}
+
+.projectofrow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px 6%;
+}
+
+.card {
+    text-align: center;
+    padding: 20px 30px;
+    place-self: center;
+    background-color: #033E3E;
+    color: white;
+    font-size: 20px;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+.card:hover {
+    opacity: 0.4;
+}
+
+#contact {
+    display: grid;
+    place-content: center;
+
+}
+
+.contact-form {
+    display: grid;
+    row-gap: 15px;
+    margin: auto;
+
+}
+
+.contact-form input,
+.contact-form textarea {
+
+    outline: none;
+    padding: 15px;
+    font-size: 20px;
+    color: #033E3E;
+
+    width: 500px;
+
+
+}
+
+.contact-form .send-value {
+    width: min-content;
+    font-size: 16px;
+    background-color: #033E3E;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 15px;
+    display: grid;
+    place-self: center;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+.contact-form .send-value:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 14px;
+    font-size: 20px;
+    background-color: #033E3E;
+    color: white;
+    min-height: min-content;
+    text-transform: uppercase;
+    padding: 30px 0px;
+    text-decoration: none;
+}
+
+.social-media .icon-facebook,
+.social-media .icon-linkedin,
+.social-media .icon-instagram,
+.social-media .icon-github {
+    margin: 8px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.footer-links a {
+    text-decoration: none;
+    margin: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*Responsive part Started */
+@media (max-width: 62em) {
+    .mobile-navbar-button {
+        display: block;
+        z-index: 999;
+        border: 3px solid white;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(39, 173, 246);
+        display: flex;
+        justify-content: center;
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease-in-out;
+    }
+
+
+    .navbar .nav-items {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .header.active .navbar {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .active .mobile-navbar-button .mobile-navbar-icon[name="close-outline"] {
+        display: block;
+    }
+
+    .active .mobile-navbar-button .mobile-navbar-icon[name="menu-outline"] {
+        display: none;
+    }
+
+    #home-content-text .home-text {
+        opacity: 0;
+    }
+
+
+}
