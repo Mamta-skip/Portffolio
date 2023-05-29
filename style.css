@@ -58,7 +58,7 @@ ul li a:hover {
 .mobile-navbar-icon[name="close-outline"] {
     display: none;
 }
-
+/*css code for home  section*/
 
 #home {
     display: grid;
@@ -94,7 +94,7 @@ ul li a:hover {
 
 #home-content-text .home-title {
 
-    color:#033E3E;
+    color: #033E3E;
     font-size: 20px;
 }
 
@@ -113,6 +113,11 @@ button {
 button:hover {
     transition: 0.5s ease-in-out;
     transform: scale(1.2);
+}
+
+.contact-button {
+    text-decoration: none;
+    color: white;
 }
 
 /* border-bottom-right-radius: 35%;
@@ -135,7 +140,7 @@ button:hover {
     transition: 0.5s ease-in-out;
     transform: scale(1.2);
 }
-
+/*Css code for about section*/
 #about {
 
     display: grid;
@@ -177,7 +182,7 @@ h1 {
 
 }
 
-/* CSS code */
+/* CSS code for skill section */
 .skill-bar {
     background-color: #f0f0f0;
     height: 10px;
@@ -195,6 +200,8 @@ h1 {
     font-size: 12px;
 
 }
+
+/*css code for project section */
 
 #project {
     display: grid;
@@ -223,17 +230,19 @@ h1 {
     opacity: 0.4;
 }
 
+
+/*css code for contact*/
 #contact {
-    
+
     align-items: center;
     justify-content: center;
     margin: 0px auto;
-   display: grid;
+    display: grid;
 }
 
 .contact-form {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -247,7 +256,7 @@ h1 {
     font-size: 20px;
     color: #033E3E;
     margin: 10px;
-   width:500px;
+    width: 500px;
 
 
 }
@@ -271,6 +280,9 @@ h1 {
     transform: scale(1.2);
 }
 
+
+/*css code for footer section*/
+
 #footer {
     display: flex;
     align-items: center;
@@ -283,6 +295,8 @@ h1 {
     text-transform: uppercase;
     padding: 30px 0px;
     text-decoration: none;
+    position: relative;
+
 }
 
 .social-media .icon-facebook,
@@ -302,6 +316,26 @@ h1 {
     cursor: pointer;
     font-size: 14px;
 }
+
+
+
+.buttonTopArrow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.buttonTopArrow i {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 
 
@@ -328,7 +362,6 @@ h1 {
         display: flex;
         justify-content: center;
         transform: translateX(100%);
-        opacity: 0;
         visibility: hidden;
         transition: transform 0.3s ease-in-out;
     }
@@ -354,21 +387,23 @@ h1 {
         display: none;
     }
 
-   
-    #about h1{
+
+
+    #about h1 {
         margin-top: 100px;
     }
+
     #about .about-row .about-section {
-        
+
         padding: 40px;
-        
+
     }
 
     .contact-form input,
     .contact-form textarea {
-        width:400px;
+        width: 400px;
     }
-    
+
 
 
 }
