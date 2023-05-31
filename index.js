@@ -7,6 +7,10 @@ const toggleNavbar = () => {
 
 mobileNavbarButton.addEventListener("click", toggleNavbar);
 
+/*js for linking cv */
+document.getElementById("myButton").addEventListener("click", function() {
+  window.location.href = "cv.docx";
+});
 
 
 
